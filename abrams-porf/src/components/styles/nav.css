@@ -1,0 +1,12 @@
+.profile{
+    width: 75px;
+    height: 75px;
+}
+.nav-bar{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+.active-link{
+
+}
