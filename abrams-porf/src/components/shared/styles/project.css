@@ -15,7 +15,8 @@
 
   .project-pic{
     display: flex;
-    height: 400px;
+    height: 50%;
+    width: 80%;
     margin-left: auto;
     margin-top: 20px;
     margin-right: auto;

@@ -61,19 +61,22 @@ class Front extends Component {
               src={coursegif}
               alt="course-review"
             ></img>
-            <Link
-              className="proj-link"
-              href="https://abramsc32.github.io/golf-review/index.html"
+
+            <form
+              action="https://abramsc32.github.io/golf-review/index.html"
+              target="_blank"
             >
-              Check Out course.re:view
-            </Link>
+              <button type="submit">Check Out course.re:view</button>
+            </form>
           </Projects>
 
           <Projects title="Game Genius" className="game-genius">
             <img className="project-pic" src={gameg} alt="game-genius"></img>
-            <Link className="proj-link" href="http://shiny-cream.surge.sh/">
-              Check Out Game Genius
-            </Link>
+         
+            <form action="http://shiny-cream.surge.sh/" target="_blank">
+              <button type="submit">Check Out Game Genius</button>
+            </form>
+
           </Projects>
         </div>
 

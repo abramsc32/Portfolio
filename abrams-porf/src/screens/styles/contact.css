@@ -13,15 +13,14 @@
 }
 .form-container h4{
 margin: auto;
-margin-top: 50px;
 font-size: 30px;
 
 }
 .form-container {
     width: 50%;
+    height: 40%;
     display: flex;
     flex-flow: column;
-    border: solid 4px black;
     margin-left: auto;
     margin-top: 20px;
     margin-right: auto;
