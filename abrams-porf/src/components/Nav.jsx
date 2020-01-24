@@ -10,7 +10,6 @@ class Nav extends React.Component {
   };
   handleModal = () => {
     this.setState({ modal: !this.state.modal });
-    console.log("helloworld");
   };
   renderLinks = () => {
     return (
@@ -29,6 +28,17 @@ class Nav extends React.Component {
       return (
         <div className="hamburger-modal">
           <div className="hamburger-modal-container">
+          <Link
+              activeClass="active"
+              to="front"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => this.handleModal()}>
+                Home
+            </Link>
+
             <Link
               activeClass="active"
               to="first-proj"
@@ -39,6 +49,18 @@ class Nav extends React.Component {
               onClick={() => this.handleModal()}>
                 Projects
             </Link>
+
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => this.handleModal()}>
+                Contact
+            </Link>
+
           </div>
           <div className="overlay"></div>
         </div>

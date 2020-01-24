@@ -1,3 +1,48 @@
 .contact-section{
+    margin-top: 500px;
     height: 100vh;
+    margin-left: 37%;
     }
+
+
+.form{
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+    height: 400px;
+}
+.form-container h4{
+margin: auto;
+margin-top: 50px;
+font-size: 30px;
+
+}
+.form-container {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    border: solid 4px black;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+}
+.input-wrap{
+    display: flex;
+    flex-flow:column;
+    height: 75px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-container button{
+    margin: auto;
+    display: flex;
+
+}
+.social-media-icons{
+display: flex;
+
+}
+.social-media{
+}

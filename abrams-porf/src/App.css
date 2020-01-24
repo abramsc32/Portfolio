@@ -5,15 +5,36 @@
   border-bottom: 5px solid rgb(215, 218, 58);
 
 } */
-
+.open-modal{
+}
 .ham-container{
   position: fixed;
   left: 92%;
   top: 2%;
 }
 .hamburger-modal{
+  display: flex;
   height: 300px;
-  background-color: rgb(108, 108, 216);
+  justify-content: space-between;
+  flex-flow: column;
+
+  background-color:#12324F;
+
+}
+.hamburger-modal-container{
+  color: white;
+  font-size:20px;
+  display: flex;
+  flex-flow: column;
+  cursor: pointer;
+
+
+}
+.hamburger-modal-container a{
+border: #ffffff solid 2px;
+margin-top: 50%;
+text-align: center;
+height: 35px;
 
 }
 .front-name{

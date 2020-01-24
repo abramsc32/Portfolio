@@ -25,7 +25,11 @@
     text-align: center;
 }
 
+.more-about:hover{
+  color: white;
+  background-color: rgb(51, 125, 194);
 
+}
 
 .downArrow img{
     margin-top: 30%;
