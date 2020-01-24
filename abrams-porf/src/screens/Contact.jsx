@@ -4,7 +4,7 @@ import './styles/contact.css'
 class FirstProject extends Component {
     state = {};
     render(){
-        return <div className='contact-section' id='first-proj'>
+        return <div className='contact-section' >
 
         <h2>FirstProject</h2>
 

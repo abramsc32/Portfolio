@@ -12,10 +12,20 @@
   top: 2%;
 }
 .hamburger-modal{
-  background-color: blue;
+  height: 300px;
+  background-color: rgb(108, 108, 216);
 
 }
+.front-name{
+  color: #0c2c4f;
+  font-family: "dankduck";
+}
 
-.project-container{
-  margin-left: 37%;
+.name-image{
+  margin-top: -30%;
+  width: 85%;
+  height: 56%;
+}
+.about-desc{
+  margin-top: -10%;
 }
