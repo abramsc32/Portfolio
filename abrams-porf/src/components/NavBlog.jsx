@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Link} from 'react-scroll'
+// import { Link} from 'react-scroll'
 import { NavLink } from 'react-router-dom'
 import profileCircle from '../images/profileCircle.png'
 import './styles/nav.css'

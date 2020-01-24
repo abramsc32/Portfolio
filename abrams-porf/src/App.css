@@ -1,7 +1,21 @@
-body{
+/* body{
   border-right: 5px solid rgb(56, 173, 56);
   border-left: 5px solid rgb(184, 62, 62);
   border-top:5px solid rgb(62, 100, 182);
   border-bottom: 5px solid rgb(215, 218, 58);
 
+} */
+
+.ham-container{
+  position: fixed;
+  left: 92%;
+  top: 2%;
+}
+.hamburger-modal{
+  background-color: blue;
+
+}
+
+.project-container{
+  margin-left: 37%;
 }

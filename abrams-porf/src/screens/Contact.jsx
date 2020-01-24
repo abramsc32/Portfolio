@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
 import './styles/contact.css'
 
-class Contact extends Component {
+class FirstProject extends Component {
     state = {};
     render(){
-        return <div className='contact-section' id='contact'>
+        return <div className='contact-section' id='first-proj'>
 
-        <h2>Contact</h2>
+        <h2>FirstProject</h2>
 
         </div>
     }
 }
-export default Contact
+export default FirstProject

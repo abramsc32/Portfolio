@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import { Link} from 'react-scroll'
-import { NavLink } from 'react-router-dom'
-import profileCircle from '../images/profileCircle.png'
+// import { Link} from 'react-scroll'
+// import { NavLink } from 'react-router-dom'
+// import profileCircle from '../images/profileCircle.png'
 import './styles/nav.css'
 
  class NavBar extends Component {
@@ -9,9 +9,9 @@ import './styles/nav.css'
     render(){
         return (
         <>
-    <img alt ='profile' className ='profile' src ={profileCircle}></img>
+    {/* <img alt ='profile' className ='profile' src ={profileCircle}></img> */}
 
-        <div className='nav-bar'>
+        {/* <div className='nav-bar'>
         <Link
         className='active-link'
         activeClass='active'
@@ -44,9 +44,9 @@ import './styles/nav.css'
         <NavLink
         activeClass='active'
         to='/blog'>
-        Blog</NavLink>
-
-  </div>
+        Blog</NavLink> */}
+{/* 
+  </div> */}
   </>
         )
         
