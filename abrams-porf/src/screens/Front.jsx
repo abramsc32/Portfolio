@@ -1,17 +1,19 @@
 import React, { Component } from "react";
 import "./styles/front.css";
 import { Link } from "react-scroll";
-import Footer from "../screens/Footer";
+// import Footer from "../screens/Footer";
 import Nav from "../components/Nav";
 import Contact from "../screens/Contact";
 import fullProfile from "../images/fullProfile.png";
 import blueArrow from "../images/blueArrow.png";
 import name from "../images/name.png";
-import gameGenius from "../images/gameGenius.png";
+// import gameGenius from "../images/gameGenius.png";
 import coursegif from "../images/coursegif.gif";
 import gameg from "../images/gameg.gif";
-import courseReview from "../images/courseReview.png";
+// import courseReview from "../images/courseReview.png";
 import Projects from "../components/shared/Projects";
+import ContactForm from './ContactForm'
+
 // import { Player } from "video-react";
 
 class Front extends Component {
@@ -81,7 +83,7 @@ class Front extends Component {
         </div>
 
         <Contact />
-
+<ContactForm/>
         {/* <Player
             playsInline
             className='first'
