@@ -17,7 +17,8 @@ font-size: 30px;
 
 }
 .form-container {
-    width: 50%;
+    background: linear-gradient(340deg, #46B4EB 70%, rgb(114, 199, 241) 30% ) ;
+    width: 60%;
     height: 40%;
     display: flex;
     flex-flow: column;
@@ -37,6 +38,7 @@ font-size: 30px;
 .form-container button{
     margin: auto;
     display: flex;
+    background-color: rgb(105, 190, 233);
 
 }
 .social-media-icons{

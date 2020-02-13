@@ -4,9 +4,62 @@
 }
 .nav-bar{
     display: flex;
-    margin: auto;
+    flex-flow: row;
     justify-content: space-around;
+    margin-left: 4%;
 }
+.contact-text h2{
+    color: #0B2B4F;
+    font-size:40px;
+    margin-bottom: 0px;
+}
+.contact-text h1{
+    color: #0B2B4F;
+    font-size:20px;
+    margin-bottom: 0px;
+}
+.contact-text p{
+    font-size:20px;
+    margin-bottom: 0px;
+
+}
+
 .active-link{
 cursor: pointer;
+font-size: 30px;
+text-decoration: none ;
+}
+
+.contact-text{
+    display: flex;
+    flex-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    overflow-wrap: break-word;
+
+
+}
+.social-media{
+    
+    width: 80%;
+    height: 80%;
+    justify-content: space-evenly;
+    margin: 2px;
+    margin-top: 40px;
+}
+
+
+.icon-links{
+    display: flex;
+    flex-flow: row;
+}
+.links-andInfo{
+    display: flex;
+    flex-flow: column;
+
+    text-align: center;
+margin-left: auto;
+margin-right: auto;
+
 }

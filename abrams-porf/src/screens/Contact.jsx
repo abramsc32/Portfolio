@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import "./styles/contact.css";
-import linkedin from '../images/linkedin.png'
-import github from '../images/github.png'
 
-import { Link } from "react-scroll";
 
 class Contact extends Component {
   state = {};
@@ -45,14 +42,8 @@ class Contact extends Component {
             <p>
               <button type="submit">Send</button>
             </p>
-            <div className='social-media-icons'>
-            <Link href='https://www.linkedin.com/in/chrisabrams722/'>
-            <img className='social-media' src={linkedin} alt='linkedin'></img>
-            </Link>
-            <Link href='https://github.com/abramsc32'>
-            <img className='social-media' src={github} alt='github'></img>
-            </Link>
-            </div>
+        
+         
            
           </form>
         </div>
