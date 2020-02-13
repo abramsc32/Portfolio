@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import ResumeNav from "../components/ResumeNav";
 
-import ChristopherAbrams from '../images/ChristopherAbrams.png'
+import chrisResume from '../images/chrisResume.png'
 
 import './styles/resume.css'
 
@@ -12,7 +12,7 @@ class Resume extends Component {
             <>
             <ResumeNav/>
         <div className='resume-section' id='resume'/>
-        <img  alt ="resume" className='resume-pdf'src={ChristopherAbrams}></img>
+        <img  alt ="resume" className='resume-pdf'src={chrisResume}></img>
         </>
         )
     }
