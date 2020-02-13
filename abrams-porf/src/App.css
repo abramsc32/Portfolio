@@ -57,6 +57,19 @@ height: 35px;
 .about-desc{
   margin-top: -10%;
 }
+@media only screen and (max-width: 1024px) and (max-height: 1400px) {
+  .name-image {
+    margin-top: -120%;
+  
+}
+.about-desc {
+  margin-top: -30%;
+}
+
+
+
+
+}
 
 
 
@@ -182,7 +195,7 @@ margin-bottom: 0px;
   .project-container{
     height: 75vh !important;
   }
-  .{
+  .contact-section{
     margin-left: 35%;
   }
   .form-container{

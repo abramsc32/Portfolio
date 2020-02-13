@@ -15,7 +15,9 @@
   background: #46B4EB;
 }
 .profile-pic{
-    width: 100%;
+  width: 75%;
+  margin: auto;
+  display: flex;
 }
 
 .about-container{
