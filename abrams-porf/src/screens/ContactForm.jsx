@@ -1,57 +1,87 @@
-import React from 'react'
-  const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
+import React from "react";
+import "./styles/contact.css";
+
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
+class ContactForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", message: "" };
   }
 
-  class ContactForm extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = { name: "", email: "", message: "" };
-    }
+  /* Here’s the juicy bit for posting the form submission */
 
-    /* Here’s the juicy bit for posting the form submission */
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
 
-    handleSubmit = e => {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...this.state })
-      })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error));
+    e.preventDefault();
+  };
 
-      e.preventDefault();
-    };
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
-    handleChange = e => this.setState({ [e.target.name]: e.target.value });
-
-    render() {
-      const { name, email, message } = this.state;
-      return (
-        <form onSubmit={this.handleSubmit}>
-          <p>
-            <label>
-              Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message" value={message} onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-      );
-    }
+  render() {
+    const { name, email, message } = this.state;
+    return (
+      <div className="contact-section" id="contact">
+        <div className="form-container">
+          <h4>Contact Me</h4>
+          <form
+            onSubmit={this.handleSubmit}
+            className="form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
+            <p>
+              <label>
+                Your Name:{" "}
+                <input
+                  type="text"
+                  name="name"
+                  value={name}
+                  onChange={this.handleChange}
+                />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Email:{" "}
+                <input
+                  type="email"
+                  name="email"
+                  value={email}
+                  onChange={this.handleChange}
+                />
+              </label>
+            </p>
+            <p>
+              <label>
+                Message:{" "}
+                <textarea
+                  name="message"
+                  value={message}
+                  onChange={this.handleChange}
+                />
+              </label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    );
   }
+}
 
-  export default ContactForm
+export default ContactForm;

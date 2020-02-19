@@ -47,9 +47,9 @@ margin-right: auto;
 
 }
 .downArrow img{
-    margin-top: 30%;
     width: 90px;
     height: 90px;
+    margin-bottom: 100%;
 }
 
 .bounce {

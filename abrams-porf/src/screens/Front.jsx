@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 // import Footer from "../screens/Footer";
 import Nav from "../components/Nav";
 import NavBlue from '../components/NavBlue'
-import Contact from "../screens/Contact";
 import roundProfile from "../images/roundProfile.png";
 import blueArrow from "../images/blueArrow.png";
 import name from "../images/name.png";
@@ -91,7 +90,6 @@ class Front extends Component {
           </Projects>
         </div>
 
-        <Contact />
 <ContactForm/>
         {/* <Player
             playsInline
