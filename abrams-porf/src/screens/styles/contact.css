@@ -1,26 +1,36 @@
 .contact-section{
-    margin-top: 500px;
+    margin-top: 1200px;
     height: 100vh;
     margin-left: 37%;
     }
 
 
-.form{
-    margin-left: auto;
-    margin-top: 20px;
-    margin-right: auto;
-    height: 400px;
-}
+    .form {
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+    }
+
+ 
 .form-container h4{
 margin: auto;
 font-size: 30px;
 
 }
+
+.form-container p{
+    font-size: 20px;
+}
 .form-container {
-    background: linear-gradient(340deg, #46B4EB 70%, rgb(114, 199, 241) 30% ) ;
+    background: linear-gradient(340deg, #46B4EB 70%, rgb(114, 199, 241) 30% );
     width: 60%;
-    height: 40%;
+    height: 70%;
     display: flex;
+    position: relative;
+    top: 20%;
     flex-flow: column;
     margin-left: auto;
     margin-top: 20px;

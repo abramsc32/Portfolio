@@ -1,20 +1,16 @@
 import React, { Component } from "react";
 import "./styles/front.css";
 import { Link } from "react-scroll";
-// import Footer from "../screens/Footer";
 import Nav from "../components/Nav";
 import NavBlue from '../components/NavBlue'
 import roundProfile from "../images/roundProfile.png";
 import blueArrow from "../images/blueArrow.png";
 import name from "../images/name.png";
-// import gameGenius from "../images/gameGenius.png";
-import coursegif from "../images/coursegif.gif";
-import gameg from "../images/gameg.gif";
-// import courseReview from "../images/courseReview.png";
+import courseRe from '../images/courseRe.gif'
+import gameG from "../images/gameG.gif";
 import Projects from "../components/shared/Projects";
 import ContactForm from './ContactForm'
 
-// import { Player } from "video-react";
 
 class Front extends Component {
   render() {
@@ -66,7 +62,7 @@ class Front extends Component {
           <Projects title="course.re:view" className="golf-review">
             <img
               className="project-pic"
-              src={coursegif}
+              src={courseRe}
               alt="course-review"
             ></img>
             <p>A golf course review blog that records past golfing trips. Site was built using HTML, CSS, and Javascript. </p>
@@ -80,7 +76,7 @@ class Front extends Component {
           </Projects>
 
           <Projects title="Game Genius" className="game-genius">
-            <img className="project-pic" src={gameg} alt="game-genius"></img>
+            <img className="project-pic" src={gameG} alt="game-genius"></img>
             <p>Full CRUD application with user authentication that stores video games from a Steam api. Users are able to look through multiple game genres and add them to their favorites list under their profile. </p>
 
             <form action="http://shiny-cream.surge.sh/" target="_blank">
@@ -91,11 +87,7 @@ class Front extends Component {
         </div>
 
 <ContactForm/>
-        {/* <Player
-            playsInline
-            className='first'
-            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-          /> */}
+    
       </>
     );
   }

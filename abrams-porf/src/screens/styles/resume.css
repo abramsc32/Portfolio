@@ -1,4 +1,8 @@
 .resume-pdf{
-    width: 100%;
+    display: flex;
+    width: 67%;
+    margin: auto;
     
+}
+.resume-section{
 }
