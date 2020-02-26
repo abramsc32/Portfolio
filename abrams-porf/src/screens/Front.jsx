@@ -7,7 +7,7 @@ import roundProfile from "../images/roundProfile.png";
 import blueArrow from "../images/blueArrow.png";
 import name from "../images/name.png";
 import courseRe from '../images/courseRe.gif';
-import gameG from '../images/gameG.gif';
+import gameG from './styles/gameG.gif';
 import Projects from "../components/shared/Projects";
 import ContactForm from './ContactForm';
 import Blog from './Blog';
