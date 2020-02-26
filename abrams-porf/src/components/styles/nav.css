@@ -5,8 +5,9 @@
 .nav-bar{
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
-    margin-left: 7%;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
 }
 .contact-text h2{
     color: #0B2B4F;
@@ -60,11 +61,8 @@ text-decoration: none ;
     flex-flow: row;
 }
 .links-andInfo{
-    display: flex;
-    flex-flow: column;
-
+ 
     text-align: center;
-margin-left: auto;
-margin-right: auto;
+
 
 }

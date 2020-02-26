@@ -10,7 +10,7 @@ import courseRe from '../images/courseRe.gif'
 import gameG from "../images/gameG.gif";
 import Projects from "../components/shared/Projects";
 import ContactForm from './ContactForm'
-
+import Blog from './Blog'
 
 class Front extends Component {
   render() {
@@ -85,7 +85,7 @@ class Front extends Component {
 
           </Projects>
         </div>
-
+<Blog/>
 <ContactForm/>
     
       </>
